@@ -9,3 +9,25 @@
 
 ### 23.3 실행 컨텍스트의 역할
 ![context](https://github.com/user-attachments/assets/24a7d08c-d4aa-4545-ae21-326d1a856c47)
+
+```js
+// 전역 변수 선언
+const x = 1;
+const y = 2;
+
+// 함수 정의
+function foo(a) {
+  // 지역 변수 선언
+  const x = 10;
+  const y = 20;
+
+  // 메서드 호출
+  console.log(a + x + y); // 130
+}
+
+// 함수 호출
+foo(100);
+
+// 메서드 호출
+console.log(x + y); // 3
+```
