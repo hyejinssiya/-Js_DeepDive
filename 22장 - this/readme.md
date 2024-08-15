@@ -95,3 +95,8 @@ const obj = {
 
 obj.foo();
 ```
+
+일반함수로 호출된 모든 함수(중첩함수,콜백함수 포함) 내부의 this에는 전역 객체가 바인딩 된다.
+--> 예외도 있다. forEach와 같은 콜백함수는 넘겨받는 대상에 따라 다르기 때문 (this 아규먼트 넘길 수 있다)  
+
+![this](https://github.com/user-attachments/assets/4632a332-fd44-4b3e-ab17-a79106c13115)
